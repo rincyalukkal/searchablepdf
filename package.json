@@ -1,0 +1,15 @@
+{
+  "name": "pdfbox",
+  "version": "1.0.0",
+  "description": "combine text and image layer to make a pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "searchable",
+    "pdf"
+  ],
+  "author": "Rincy",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-pdfbox" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>pdfbox</name>
+
+    <js-module name="pdfbox" src="www/pdfbox.js">
+        <clobbers target="pdfbox" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="pdfbox">
+                <param name="android-package" value="cordova.plugin.pdfbox.pdfbox" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/pdfbox.java" target-dir="src/cordova/plugin/pdfbox/pdfbox" />
+    </platform>
+</plugin>
